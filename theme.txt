@@ -1,0 +1,19 @@
+//Color Codes//
+
+Buttons: background: #4CAF50; color: #fff;
+On hover: background: #2E7D32; transition: 0.3s;
+
+Body Background: #F1F8E9
+
+Cards: background: #E8F5E9; box-shadow: 0 4px 8px rgba(46,125,50,0.1);
+
+Active Link or Selected Task: border-left: 4px solid #4CAF50;
+
+Weather Widget Gradient: linear-gradient(135deg, #A5D6A7, #E8F5E9);
+
+//Typography//
+
+Primary Font: "Poppins", "Inter", or "Nunito"
+
+Backup Font: sans-serif
+
