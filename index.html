@@ -16,13 +16,46 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Felipa:regular" rel="stylesheet" />
+
 </head>
 
 <body>
 
-    <header>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="index.html">
+                <img src="assets/img/logo.webp" style="width: 30px;" alt="logo">
+                <span>Pulse</span>
+            </a>
 
+            <!-- hamburger -->
+            <input type="checkbox" id="menu-toogle" class="menu-toogle">
+            <label for="menu-toogle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="menu">
+                <li><a href="#">Task</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
     </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <a class="logo-text">PULSE</a>
+        </div>
+
+        <div class="quote">
+
+        </div>
+
+    </section>
 
     <section class="taskmanager">
 

@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 :root {
     --buttons: #4CAF50;
     --buttons-hover: #2E7D32;
@@ -18,8 +19,122 @@ body {
 }
 
 
+/* ===== NAVBAR ===== */
+
+.nav {
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    background:linear-gradient(140deg, #375838, #266829);
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 31, 7, 0.26);
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 2060px;
+    margin: 0 auto;
+}
+
+
+.nav-inner a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-family:cursive;
+    font-size: 1.2rem;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+/* ===== HAMBURGER MENU ===== */
+
+.menu-toogle {
+    display:none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-toogle:checked~.hamburger span:nth-child(1){
+    transform: rotate(45deg) translate(4px,10px);
+}
+.menu-toogle:checked ~.hamburger span:nth-child(2){
+    opacity: 0;
+}
+.menu-toogle:checked~ .hamburger span:nth-child(3){
+    transform: rotate(-45deg) translate(4px,-9px);
+}
+
+/* ===== RESPONSIVE MENU ===== */
+
 /* XS - Extra Small (Mobile styles) */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left:0 ;
+        flex-direction: column;
+        gap: 0;
+        backdrop-filter: blur;
+        background: rgba(43, 42, 42, 0.95);
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+
+    }
+
+    .menu li {
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .menu li a{
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .menu-toogle:checked~.menu {
+        max-height: 200px;
+    }
+}
 
 /* SM - Small (Small tablet/phone styles) */
 @media (min-width: 481px) and (max-width: 767px) {}
