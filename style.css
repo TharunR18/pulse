@@ -12,12 +12,12 @@ html {
     --buttons: #4CAF50;
     --buttons-hover: #2E7D32;
     --cards: #E8F5E9;
+    --bg: #F1F8E9;
 }
 
 body {
-    background-color: #F1F8E9;
+    background-color: white;
 }
-
 
 /* ===== NAVBAR ===== */
 
@@ -25,7 +25,7 @@ body {
     padding: 15px 20px;
     position: sticky;
     top: 0;
-    background:linear-gradient(140deg, #375838, #266829);
+    background: #38743b;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 31, 7, 0.26);
 }
@@ -45,7 +45,7 @@ body {
     gap: 10px;
     text-decoration: none;
     color: white;
-    font-family:cursive;
+    font-family: cursive;
     font-size: 1.2rem;
 }
 
@@ -67,10 +67,8 @@ body {
     color: black;
 }
 
-/* ===== HAMBURGER MENU ===== */
-
 .menu-toogle {
-    display:none;
+    display: none;
 }
 
 .hamburger {
@@ -88,21 +86,20 @@ body {
     transition: all 0.3s ease;
 }
 
-.menu-toogle:checked~.hamburger span:nth-child(1){
-    transform: rotate(45deg) translate(4px,10px);
-}
-.menu-toogle:checked ~.hamburger span:nth-child(2){
-    opacity: 0;
-}
-.menu-toogle:checked~ .hamburger span:nth-child(3){
-    transform: rotate(-45deg) translate(4px,-9px);
+.hero-container {
+    padding: 130px;
+    max-width: 2617px;
+    background: var(--bg);
+    color: var(--buttons-hover);
+    font-family: "poppins", cursive;
+    text-align: center;
+
 }
 
-/* ===== RESPONSIVE MENU ===== */
 
 /* XS - Extra Small (Mobile styles) */
 @media (max-width: 480px) {
-    
+
     .hamburger {
         display: flex;
     }
@@ -111,7 +108,7 @@ body {
         position: absolute;
         top: 60px;
         right: 0;
-        left:0 ;
+        left: 0;
         flex-direction: column;
         gap: 0;
         backdrop-filter: blur;
@@ -126,27 +123,66 @@ body {
         padding: 20px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .menu li a{
+
+    .menu li a {
         text-align: center;
         display: block;
         width: 100%;
     }
+
     .menu-toogle:checked~.menu {
         max-height: 200px;
     }
+
+    .menu-toogle:checked~.hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 10px);
+    }
+
+    .menu-toogle:checked~.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toogle:checked~.hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -9px);
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
 }
 
 /* SM - Small (Small tablet/phone styles) */
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+    .logo-text {
+        font-size: 30px;
+    }
+}
 
 /* MD - Medium (Tablet styles) */
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo-text {
+        font-size: 40px;
+    }
+}
 
 /* LG - Large (Laptop styles) */
-@media (min-width: 1025px) and (max-width: 1200px) {}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .logo-text {
+        font-size: 50px;
+    }
+}
 
 /* XL - Extra Large (Large desktop styles) */
-@media (min-width: 1201px) and (max-width: 1440px) {}
+@media (min-width: 1201px) and (max-width: 1440px) {
+    .logo-text {
+        font-size: 60px;
+    }
+}
 
 /* XXL - Ultra (4K/ultra-wide styles) */
-@media (min-width: 1441px) {}
+@media (min-width: 1441px) {
+    .logo-text {
+        font-size: 65px;
+    }
+}
