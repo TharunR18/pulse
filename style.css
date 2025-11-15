@@ -96,6 +96,68 @@ body {
 
 }
 
+/* todo app */
+
+.todo-app {
+    padding: 40px 10px 10px 10px;
+}
+
+.todo {
+    padding: 20px;
+    background: aliceblue;
+    font-family: cursive;
+    height: 400px;
+}
+
+.todo img {
+    width: 36px;
+}
+
+.todo h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    font-family: "poppins", cursive;
+    border-radius: 5px;
+    width: 670px;
+}
+
+.row input {
+    flex: 4;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: "poppins", cursive;
+}
+
+.row button {
+    flex: 1;
+    font-family: "poppins", cursive;
+    background-color: #5890FF;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
 
 /* XS - Extra Small (Mobile styles) */
 @media (max-width: 480px) {
@@ -150,6 +212,7 @@ body {
         font-size: 20px;
     }
 
+
 }
 
 /* SM - Small (Small tablet/phone styles) */
@@ -157,6 +220,9 @@ body {
     .logo-text {
         font-size: 30px;
     }
+
+
+
 }
 
 /* MD - Medium (Tablet styles) */
