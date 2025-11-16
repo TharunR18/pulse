@@ -10,9 +10,9 @@ html {
 
 :root {
     --buttons: #4CAF50;
-    --buttons-hover: #2E7D32;
     --cards: #E8F5E9;
     --bg: #F1F8E9;
+
 }
 
 body {
@@ -44,9 +44,11 @@ body {
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: white;
+    color: aliceblue;
     font-family: cursive;
     font-size: 1.2rem;
+    user-select: none;
+
 }
 
 
@@ -90,7 +92,7 @@ body {
     padding: 130px;
     max-width: 2617px;
     background: var(--bg);
-    color: var(--buttons-hover);
+    color: var(--buttons);
     font-family: "poppins", cursive;
     text-align: center;
 
@@ -120,7 +122,7 @@ body {
 
 }
 
-.container-1{
+.container-1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,6 +159,45 @@ body {
     cursor: pointer;
     border: none;
     outline: none;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
+    padding: 20px;
+    width: 570px;
+}
+
+.list-container li {
+    list-style: none;
+    font-family: cursive;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+
+}
+
+.list-container li::before {
+    content: '';
+    background: url(assets/todo/images/unchecked.png);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-size: cover;
+    left: -35px;
+    top: 2px;
+
+
 }
 
 /* XS - Extra Small (Mobile styles) */
