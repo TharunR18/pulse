@@ -108,7 +108,9 @@ body {
     padding: 20px;
     background: aliceblue;
     font-family: cursive;
-    height: 400px;
+    min-height: 400px;
+    max-height:max-content;
+
 }
 
 .todo img {
@@ -198,6 +200,9 @@ body {
     top: 2px;
 
 
+}
+.checked{
+    text-decoration:line-through gray 3px ;
 }
 
 /* XS - Extra Small (Mobile styles) */
