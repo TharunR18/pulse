@@ -153,14 +153,19 @@ body {
 .row button {
     flex: 1;
     font-family: "poppins", cursive;
-    background-color: #5890FF;
+    background-color: #2769ec;
     border-radius: 5px;
     height: 40px;
     width: 100px;
+    font-size: 15px;
     color: white;
     cursor: pointer;
     border: none;
     outline: none;
+}
+
+.row button:hover{
+    background-color: #6592ec;
 }
 
 .container-2 {
